@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Noto Sans */
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      /* Roboto */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        font-family:
+          Noto Sans,
+          sans-serif;
+        padding: 5px;
+      }
+      .main-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .form-section {
+        width: 50%;
+      }
+      fieldset {
+        border: 1px solid rgb(22, 22, 22);
+        border-radius: 10px;
+        padding: 20px 40px;
+      }
+      legend {
+        font-size: 25px;
+        padding: 10px 30px;
+        background-color: rgb(22, 22, 22);
+        color: white;
+        border-radius: 35px;
+      }
+      input {
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">JOB APPLICATION FORM</h1>
+    <section class="main-page">
+      <!-- FIRST FIELDSET -->
+
+      <form class="form-section" action="">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="">First Name:</label><br />
+          <input required type="text" /><br /><br />
+          <label for="">Middle Name:</label><br />
+          <input type="text" /><br /><br />
+          <label for="">Last Name:</label><br />
+          <input required type="text" /><br /><br />
+          <label for="">CNIC No.:</label><br />
+          <input required type="number" /><br /><br />
+          <label for="">Email Address:</label><br />
+          <input type="email" /><br /><br />
+          <label for="">Phone No.:</label><br />
+          <input required type="number" /><br /><br />
+          <label for="">Date of Birth (DOB):</label><br />
+          <input required type="date" /><br /><br />
+          <label for="">City/Province:</label><br />
+          <select required name="" id="">
+            <optgroup label="KPK">
+              <option value="">Peshawar</option>
+              <option value="">Gilgit Baltistan</option>
+              <option value="">Skardu</option>
+            </optgroup>
+            <optgroup label="Balochistan">
+              <option value="">Quetta</option>
+            </optgroup>
+            <optgroup label="Sindh">
+              <option value="">Karachi</option>
+            </optgroup>
+            <optgroup label="Punjab">
+              <option value="">Islamabad</option>
+              <option value="">Lahore</option>
+            </optgroup>
+            <optgroup label="Fata"></optgroup></select
+          ><br /><br />
+          <label for="">Address:</label><br />
+          <textarea name="" id=""></textarea><br /><br />
+          <label for="">Gender.:</label><br />
+          <input id="gender1" name="gender" type="radio" />
+          <label for="gender1">Male</label>
+          <input id="gender2" name="gender" type="radio" />
+          <label for="gender2">Female</label>
+          <input id="gender3" name="gender" type="radio" />
+          <label for="gender3">Prefer not say</label>
+        </fieldset>
+      </form>
+
+      <!-- SECOND FIELDSET -->
+
+      <form class="form-section" action="">
+        <fieldset>
+          <legend>Education</legend>
+          <label for="">College Name:</label><br />
+          <input type="text" /><br /><br />
+          <label for="">Degree:</label><br />
+          <input type="text" /><br /><br />
+          <label for="">Graduate:</label><br />
+          <input name="graduate" id="graduate1" type="radio" />
+          <label for="graduate1">Yes</label><br />
+          <input name="graduate" id="graduate2" type="radio" />
+          <label for="graduate2">No</label><br /><br />
+          <label for="">University Name:</label><br />
+          <input type="text" /><br /><br />
+          <label for="">Diploma:</label><br />
+          <input type="text" /><br /><br />
+          <label for="">GPA:</label><br />
+          <input type="number" /><br /><br />
+          <label for="">Graduate:</label><br />
+          <input name="graduate" id="graduate1" type="radio" />
+          <label for="graduate1">Yes</label><br />
+          <input name="graduate" id="graduate2" type="radio" />
+          <label for="graduate2">No</label><br />
+        </fieldset>
+      </form>
+
+      <!-- THIRD FIELDSET -->
+
+      <form class="form-section" action="">
+        <fieldset>
+          <legend>Employment Eligibility</legend>
+          <label for="">Are you legally eligible to work in the Pakistan?</label><br />
+          <input required name="eligibilityOne" id="eligibility1" type="radio" />
+          <label for="eligibility1">Yes</label>
+          <input name="eligibilityOne" id="eligibility2" type="radio" />
+          <label for="eligibility2">No</label><br /><br />
+          <label for="">Have you ever worked for this employer?</label><br />
+          <input required name="eligibilityTwo" id="eligibility1" type="radio" />
+          <label for="eligibility3">Yes</label>
+          <input name="eligibilityTwo" id="eligibility4" type="radio" />
+          <label for="eligibility4">No</label><br><br>
+          <label for="">Have you ever been convicted of a felony?</label><br />
+          <input required name="eligibilityThree" id="eligibility1" type="radio" />
+          <label for="eligibility5">Yes</label>
+          <input name="eligibilityThree" id="eligibility6" type="radio" />
+          <label for="eligibility6">No</label><br><br>
+        </fieldset><br>
+        <input style="padding: 10px 40px; border: none; border-radius: 10px; background-color: rgb(22, 22, 22); color: white;" type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
